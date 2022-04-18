@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from './Logo';
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,6 +41,7 @@ export default function Home() {
       <h2>Frontend Developer / JavaScript Expert</h2>
       <Link to='/contact'className='flat-button'>CONTACT ME</Link>
     </div>
+    <Logo />
   </div>
   )
 }
